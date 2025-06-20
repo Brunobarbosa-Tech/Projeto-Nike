@@ -16,6 +16,4 @@ carrinho.style.background = cor;
         tenis.src = imagem
         tenis.classList.remove("troca-efeito")
     }, 600);
-
-    
 }
