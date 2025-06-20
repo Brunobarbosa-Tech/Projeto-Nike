@@ -1,0 +1,129 @@
+body {
+    margin: 0;                           /* Remove os espaços externos ao redor dos elementos (margens) */
+    padding: 0;                          /* Remove os espaços internos dentro dos elementos (preenchimento) */
+    background: #b5f101;              /* cor de fundo */
+    color: white;                    /* Define a cor do texto */
+    padding: 20px 160px;              /* Remove os espaços internos dentro dos elementos (preenchimento) aplicou primeiro valor em cima e embaixo e segundo dos lados */
+    height: 100vh;                    /* Define altura e VH é para ocupar tela toda */
+    font-family: "Noto Sans", sans-serif;  /* Define a família de fontes para o texto da página. */
+
+    overflow: hidden; /* Esconde tudo que sair para fora da área do elemento. */
+}
+
+body::before {
+  content: '';                /* Cria um elemento antes do conteúdo do <body> (não mostra texto, só a forma) */
+  background: #202020;     /* Define a cor de fundo do elemento (preto) */
+  position: absolute;        /* Permite posicionar o elemento de forma livre na tela */
+  top: 0;                   /* Começa no topo da página */
+  left: -600px;              /* Move o elemento 600px para a direita */
+  transform: rotate(-70deg);  /* Gira o elemento em -60 graus */
+  width: 100%;                 /* Define a largura como 100% da tela */
+  height: 120%;           /* Define a altura maior que a tela para cobrir completamente */
+}
+
+body::after {
+    content: 'Nike';            /* Adiciona o texto "Nike" depois do conteúdo do <body> */
+    position: absolute;         /* Posiciona o texto de forma absoluta na tela */
+    top: 50%;                   /* Move o texto para 50% da altura da tela */
+    left: 50%;                  /* Move o texto para 50% da largura da tela */
+    transform: translate(-50%, -50%);   /* Ajusta a posição para que o centro do texto fique exatamente no meio da tela */
+    color: black;                   /* Define a cor do texto como preta */
+    font-size: 180px;                 /* Define um tamanho grande para o texto (250px) */
+    font-weight: bold;              /* Deixa o texto em negrito (mais grosso). */
+    opacity: 0.5;              /* Deixa o texto em negrito */
+}
+
+.logo {
+        width: 80px;  /* Define uma largura da imagem */ 
+        position: absolute;
+        top: 50px;       /* ajuste conforme necessário */
+        left: 200px;
+        z-index: 10;
+}
+
+h4 {
+    font-size: 30px;    /* Aumenta o tamanho do texto */
+     margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 80px;    /* Aumenta o tamanho do texto */
+      margin-top: 0;
+}
+
+p {
+    font-size: 16px;         /* Aumenta o tamanho do texto */
+    margin-bottom: 40px;    /* cria um espaço extra abaixo do elemento, afastando-o de outros elementos que vêm depois dele na página. */
+}
+
+.carrinho {
+    background: #b5f101;             /* Define a cor de fundo do botão  */
+    padding: 10px 20px;            /* Adiciona espaço dentro do botão (10px em cima/baixo e 20px nos lados)*/
+    border-radius: 30px;           /* Deixa as bordas do botão arredondadas */
+    font-size: 16px;               /* Define o tamanho do texto dentro do botão */
+    color: black;                /* Define a cor do texto */
+    cursor: pointer;               /* Faz o cursor virar uma "mãozinha" quando passa por cima do botão */
+    transition: 0.5s;               /* Faz qualquer mudança no estilo acontecer de forma suave em 0.5 segundos */
+}
+
+.carrinho:hover {
+    opacity: 0.7;        /* Deixa o elemento um pouco transparente (70% visível) */
+}
+
+.tenis {
+    width: 800px;                       /* Define a largura do elemento como 800 pixels */
+    transform: rotate(-25deg);          /* Gira a imagem para a esquerda */
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: 1s;
+}
+
+.troca-efeito {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+}
+
+.caixa-principal {
+ display: flex;                      /* Torna o elemento um container flexível, facilitando a organização dos itens */
+ justify-content: space-between;     /* Coloca um espaço igual entre os itens, alinhando um à esquerda, outro à direita e, se houver mais itens, distribuindo igualmente. */
+ align-items: center;
+ height: 75%;
+ position: relative;
+ z-index: 1;
+}
+
+.caixa-texto {
+    max-width: 500px;   /* Define que a largura máxima do elemento*/
+}
+
+.caixa-botoes {
+ z-index: 2;          /* Coloca esse elemento na frente de elementos com z-index menor. */
+ position: relative;  /* Permite ajustar a posição do elemento (como usar top, left, etc.). Também serve para criar um "nível" para usar com z-index. */
+ display: flex;       /* Usa o modelo de layout flexível (flexbox), que ajuda a organizar os itens em linha ou coluna. */
+ gap: 20px;           /* Cria um espaço (vazio) de 20px entre os itens dentro do flex. */
+ margin-top: 20px;    /* Adiciona um espaço de 20px acima do elemento. */
+}
+
+.botao {
+ width: 80px;         /* Define a largura do elemento*/
+ height: 80px;         /* Define a altura do elemento*/
+ border-radius: 50px;  /* Deixa as bordas arredondadas, pode deixar o elemento redondo (se for quadrado). */
+ cursor: pointer;      /* Muda o cursor do mouse para uma "mãozinha" quando passa por cima. Isso mostra que o elemento pode ser clicado. */
+ margin-top: 20px;
+}
+
+.botoes:active {
+opacity: 0.6; /* Deixa o elemento meio transparente. / 0.6 significa 60% visível. Vai de 0 (invisível) até 1 (totalmente visível). */
+}
+
+.verde {
+ background: #b6ed10;   /* Define a cor de fundo do elemento.*/
+}
+
+.azul {
+ background: #58cced;  /* Define a cor de fundo do elemento.*/
+}
+
+.rosa {
+ background: #ff9eb5;  /* Define a cor de fundo do elemento.*/
+}

@@ -1,0 +1,2 @@
+# Projeto-Nike
+Desenvolvi uma 𝙡𝙖𝙣𝙙𝙞𝙣𝙜 𝙥𝙖𝙜𝙚 𝙙𝙤 𝙉𝙞𝙠𝙚 𝘼𝙞𝙧 𝙕𝙤𝙤𝙢 usando HTML, CSS e JavaScript puro, com foco em interatividade e visual moderno. O objetivo foi criar uma experiência moderna, responsiva e interativa, com efeitos visuais e troca dinâmica de cores.  👨‍💻 Tecnologias aplicadas:  🔹 HTML – Estruturação semântica e organização do conteúdo.  🔹 CSS – Estilização com Flexbox, animações e responsividade.  🔹 JavaScript – Manipulação da DOM e interações dinâmicas.
